@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cat Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Cat Survey Form</h1>
+  <p id="description"><em>Thank you for taking the time to help us understand why you love cats</em></p>
+  <main>
+    <div class="info">
+    <form id="survey-form">
+      <label id="name-label">Name of Cat: <br><input id="name" type="text" placeholder="Enter Your Cats Name" required /></label>
+      <br>
+      <label id="email-label">Email: <br><input id="email" type="email" placeholder="Enter Your Email" required /></label>
+      <br>
+      <label id="number-label">Age of Cat: <br><input id="number" type="number" min="0" max="50" placeholder="0" /></label>
+      <br>  
+      <label for="dropdown" class="question">Which option best describes your cats appearance?</label><br>
+      <select id="dropdown" name="dropdown">
+        <option value="">(select one)</option>
+        <option value="1">Black</option>
+        <option value="2">White</option>
+        <option value="3">Red or Ginger</option>
+        <option value="4">Blue or Grey</option>
+        <option value="5">Calico</option>
+        <option value="6">Tabby</option>
+      </select> 
+      <br>
+      <label for="character" class="question">What option best describes your cats personality?</label><br>
+      <select id="character" name="character">
+        <option value="">(select one)</option>
+        <option value="1">Indepenent</option>
+        <option value="2">Curious</option>
+        <option value="3">Playful</option>
+        <option value="4">Sassy</option>
+        <option value="5">Timid</option>
+      </select>
+      <br>
+      <br>
+      <label class="question">What is your favourite cat behaviour? (check all that apply):</label>
+      <br>
+      <label for="nap"><input id="nap" type="checkbox" value="nap">Napping</label><br>
+      <label for="zoomies"><input id="zoomies" type="checkbox" value="zoomies">Zoomies</label><br>
+      <label for="biscuit"><input id="biscuit" type="checkbox" value="biscuit">Making biscuits</label><br>
+      <label for="purr"><input id="purr" type="checkbox" value="purr">Purring</label><br>
+      <label for="groom"><input id="groom" type="checkbox" value="groom">Grooming</label><br>
+      <label for="belly"><input id="belly" type="checkbox" value="belly">Belly exposure</label><br>
+      <label for="bird"><input id="bird" type="checkbox" value="bird">Watching birds</label>
+      <br>
+      <br>
+      <label for="comment" class="question">Please tell us anything else about your cat or why you love cats:<br>
+        <textarea id="comment" rows="3" cols="50" placeholder="I love when my cat..."></textarea>
+      </label> 
+      <br>
+      <br> 
+      <legend class="question">Would you recommend adopting a cat to a friend?</legend>
+      <label for="definitely"><input id="definitely" type="radio" value="definitely" name="yes-or-no" checked/>Definitely</label>
+      <label for="sometimes"><input id="sometime" type="radio" value="sometimes" name="yes-or-no" />Sometimes</label>
+      <label for="probably-not"><input id="probably-not" type="radio" value="probably-not" name="yes-or-no"/>Probably not</label>
+      <br>
+      <br>
+      <input id="submit" type="submit" value="Submit">
+    </form>
+    </div>
+  </main>
+</body>
+</html>
